@@ -1,17 +1,15 @@
 import React from 'react';
+import '../App.css';
 
-function Nav(props){
+export default function Nav(props){
     return (
-        <header>
-            <h2>
-                Kyle
-            </h2>
-            <nav>
-                <ul>
-                    <li>hahaha</li>
-                </ul>
-            </nav>
-        </header>
+        <nav>
+            <ul className='nav-items'>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Contact Me</li>
+                <li>Resume</li>
+            </ul>
+        </nav>
     );
 }
-export default Nav;
