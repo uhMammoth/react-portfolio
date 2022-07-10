@@ -1,7 +1,5 @@
 body {
   position: relative;
-  height: 100vh;
-
   margin: 0;
   font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
      'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -42,6 +40,7 @@ header{
 /*                  Main                  */
 main {
   text-align: center;
+  margin: 50px 0px;
 }
 
 .projects{
@@ -72,6 +71,9 @@ main {
   color: blue;
 }
 
+.projectCard img {
+  width: 50px;
+}
 
 /*                 footer                 */
 footer {  

@@ -1,16 +1,12 @@
 import React from 'react';
-import logo from '../logo.svg';
 import '../App.css';
 import Nav from './Nav';
 
-export default function Header(props){
+export default function Header({navState, handleNavState}){
     return (
         <header>
-            <img src={logo} className="nav-logo" alt="logo" />
-            <h2>
-                Kyle
-            </h2>            
-            <Nav />
+            <h2>Kyle</h2>            
+            <Nav navState={navState} handleNavState={handleNavState}/>
         </header>
     );
 }

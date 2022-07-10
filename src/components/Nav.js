@@ -1,14 +1,14 @@
 import React from 'react';
 import '../App.css';
 
-export default function Nav(props){
+export default function Nav({navState, handleNavState}){
     return (
         <nav>
             <ul className='nav-items'>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li><a href='#about' onClick={() => handleNavState('About')}>About</a></li>
+                <li><a href='#portfolio' onClick={() => handleNavState('Portfolio')}>Portfolio</a></li>
+                <li><a href='#contact' onClick={() => handleNavState('Contact')}>Contact</a></li>
+                <li><a href='#resume' onClick={() => handleNavState('Resume')}>Resume</a></li>
             </ul>
         </nav>
     );
