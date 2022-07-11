@@ -1,10 +1,18 @@
 # React Portfolio
 
-This is a starter portfolio I'm working on using react.
+Hi my name is Kyle, this is my portfolio that I am working on using react! 
 
 ## Deployment
 
 [GithubPages](https://uhmammoth.github.io/react-portfolio/)
+
+## Running
+
+Fairly simple to start this on a local repository just:
+```
+npm i 
+npm start
+```
 
 ## Completed
 
