@@ -1,3 +1,10 @@
+:root{
+  --one: #EDAE49;
+  --two: #D1495B;
+  --three: #00798C;
+  --four: #30638E;
+  --five: #003D5B;
+}
 body {
   position: relative;
   margin: 0;
@@ -13,95 +20,208 @@ code {
     monospace;
 }
 
-/*                 Header                 */
 header{
+  z-index: 1;
   position: sticky;
   top: 0;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
-  background-color: rgb(112, 156, 177);
-  box-shadow: 0 1px 10px black;
+  background-color: var(--one);
+  box-shadow: 0 1px 5px var(--five);
+  min-height: min-content;
 }
-.nav-items {
+
+header h1 {
+  margin: 0 0 15px 15px;  
+  color: var(--three);
+  text-shadow: 3px 3px 3px var(--five);
+}
+
+#nav-items {
+  margin: 0;
   list-style: none;
   display: flex;
 }
 
-.nav-items > li {
+#nav-items li {    
   padding: 10px;
+}
+
+#nav-items a {
+  text-decoration: none;
+  color: var(--three);
+  text-shadow: 1px 1px 1px var(--five);
+  padding: 5px;
+}
+
+#nav-items a:hover {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--five);
+  color: var(--one);
+  text-shadow: 3px 3px 3px var(--two);
 }
 
 .nav-logo {
   width: 100px;
 }
 
-/*                  Main                  */
-main {
-  text-align: center;
-  margin: 50px 0px;
-}
-
-.projects{
-  width: 90vw;
-  margin-top: 3vh;
+main h1 {
   margin-inline: auto;
-  background-color: orange;
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  background-color: var(--five);
+  color: var(--one);
+  text-shadow: 3px 3px 3px var(--two);
+}
+/*                 about me               */
+
+#about-me {
+  margin-top: 5vh;
+  padding: 10px;
+  background-color: var(--five);
+  border-radius: 10px;
+  margin-inline: auto;
+  width: 75vw;
+  min-height: 25vw;
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+}
+
+#about-me img{
+  float: left;
+  margin-left: 5px;
+  width: 20vw;
+  height: 100%;  
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#about-me p {
+  border-radius: 5px;  
+  background-color: #fff;
+}
+
+/*                 projects               */
+
+.cards{
+  width: 90vw;
+  margin-top: 1vh;
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
   grid-auto-rows: minmax(100px, auto);
+  justify-content: center;
 }
 
-.projects a {
-  text-decoration: none;
+.card {
+  box-shadow: 0 0 2px black;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
-.projectCard {  
-  background-color: grey;
+.card:hover {
+  box-shadow: 0 0 5px black;
 }
 
-.projectCard div {
-  display: none;
+.card div {
+  padding: 10px;
+  text-align: justify;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  background-color: var(--five);
+  color: var(--one);
+  text-shadow: 3px 3px 3px var(--two);
 }
 
-.projectCard:hover div {
-  display: block;
-  color: blue;
+.card p {
+  padding: 5px;
 }
 
-.projectCard img {
+.card img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.github {
+  flex-basis: auto;
   width: 50px;
+  float: left;
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.github:hover {
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+}
+
+/*                 contact                 */
+
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  max-width: 50vw;
+  margin-inline: auto;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: var(--five);
+  color: var(--one);
+  text-shadow: 3px 3px 3px var(--two);
+  box-shadow: 0 1px 5px var(--five);
+}
+
+#contact-form div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+
+#contact-form button, #contact-form label, #contact-form input, #contact-form textarea, #contact-form p  {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /*                 footer                 */
+
 footer {  
   bottom: 0;
   width: 100%;
   height: 5vh;
-
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(112, 156, 177);
-  box-shadow: 0 1px 10px black;
+  justify-content: center;
+  background-color: var(--one);
+  box-shadow: 0 1px 5px var(--five); 
+  position: fixed;
+  bottom: 0;
 }
 
 footer p {
   margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 450px) {
+  .cards{
+    grid-template-columns: repeat(2, 1fr);    
   }
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card div {
+    visibility: hidden;
+    position: absolute;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .card:hover div {
+    visibility: visible;
   }
 }
