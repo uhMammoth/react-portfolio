@@ -1,0 +1,30 @@
+[
+    {
+        "title": "School Website",
+        "desc": "aaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaa",
+        "deployment": "https://park-place-association.herokuapp.com/",
+        "github": "https://github.com/uhMammoth/school-website",
+        "img": "school-website.png"
+    },
+    {
+        "title": "Park Place",
+        "desc": "aaaaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaa",
+        "deployment": "https://park-place-association.herokuapp.com/",
+        "github": "https://github.com/uhMammoth/GamePlatforms",
+        "img": "park-place.png"
+    },
+    {
+        "title": "Game Platforms",
+        "desc": "blah",
+        "deployment": "https://uhmammoth.github.io/GamePlatforms/",
+        "github": "https://github.com/uhMammoth/GamePlatforms",
+        "img": "game-platforms.png"
+    },
+    {
+        "title": "Run Buddy",
+        "desc": "HTMl CSS project",
+        "deployment": "https://uhmammoth.github.io/RunBuddy/",
+        "github": "https://github.com/uhMammoth/RunBuddy",
+        "img": "run-buddy.png"
+    }
+]

@@ -6,21 +6,11 @@ export default function Footer(){
             media: "github",
             link: "https://github.com/uhMammoth",
             icon: "github.svg"
-        },
-        {
-            media: "github",
-            link: "https://github.com/uhMammoth",
-            icon: "github.svg"
-        },
-        {
-            media: "github",
-            link: "https://github.com/uhMammoth",
-            icon: "github.svg"
-        },
+        }
     ]
     const footer = profiles.map((profile, i) => {
         return (
-            <img src={require(`../icons/${profile.icon}`)} alt={profile.media}></img>
+            <a key={i} href={profile.link}><img src={require(`../icons/${profile.icon}`)} alt={profile.media}></img></a>
         )        
         })
     return (

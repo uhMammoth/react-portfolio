@@ -7,6 +7,7 @@ import Portfolio from './components/mainComponents/Portfolio';
 import Contact from './components/mainComponents/Contact';
 import Resume from './components/mainComponents/Resume';
 
+
 export default function App() {
   const [navState, setNavState] = useState('About');
   const renderPage = () => {
@@ -18,7 +19,7 @@ export default function App() {
       return <Contact />
     } else if (navState === 'Resume') {
       return <Resume />
-    }
+    } 
   };
   const handleNavState = (page) => setNavState(page);
   return(
