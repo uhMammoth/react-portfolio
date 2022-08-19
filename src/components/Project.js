@@ -1,5 +1,5 @@
 import React from "react";
-import github from '../../icons/github.svg';
+import github from '../icons/github.svg';
 
 
 export default function Project(props){
@@ -10,7 +10,7 @@ export default function Project(props){
                 <h2 className="card-title">{props.title}</h2>
                 <p className="card-desc">{props.desc}</p>                               
             </div>        
-            <img className="card-img" src={require(`../../images/${props.img}`)} alt={props.title}/>
+            <img className="card-img" src={require(`../images/${props.img}`)} alt={props.title}/>
         </a>
     );
 };

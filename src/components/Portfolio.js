@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import Project from './Project';
-import projects from '../../assets/projects.json'
+import projects from '../assets/projects.json'
 
 export default function Portfolio(){
     const cards = projects.map((project, i) => {
@@ -12,11 +12,11 @@ export default function Portfolio(){
         )        
         })
     return( 
-        <main>                            
+        <div id="projects">                            
           <h1>Portfolio</h1>
           <div className="cards">
             {cards}
           </div>          
-        </main> 
+        </div> 
     );
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import ResumeFile from '../../assets/Resume.pdf';
+import ResumeFile from '../assets/Resume.pdf';
 
 
 export default function Resume(){
     return(
-        <div>
+        <div id="resume">
             <a href={ResumeFile} rel="noopener noreferrer" target="_blank">Download Resume</a>
             <section>
             TECHNICAL SKILLS

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-export default function Header({navState, handleNavState}){
+export default function SideBar(){
     return (          
         <nav>
             <ul id='nav-items'>
