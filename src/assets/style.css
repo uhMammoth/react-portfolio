@@ -1,0 +1,27 @@
+:root{
+    --one: #04724D;
+    --two: #56876D;
+    --three: #8DB38B;
+    --four: #BDBEA9;
+    --five: #D2AB99;
+  
+    --lightlime: #abd699;
+    --freshlemon: #ffe26a;
+    --teal: #75c9b7;
+    --mint: #c7ddcc;
+    --navy: #16123f;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom right, var(--lightlime), var(--teal));
+    position: relative;
+    margin: 0;
+    font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

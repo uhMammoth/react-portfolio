@@ -1,0 +1,29 @@
+/*                 about me               */
+
+#about-me {
+    margin-top: 5vh;
+    padding: 10px;
+    background-color: var(--five);
+    border-radius: 10px;
+    margin-inline: auto;
+    width: 75vw;
+    min-height: 25vw;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+  }
+  
+  #about-me img{
+    float: left;
+    margin-left: 5px;
+    width: 20vw;
+    height: 100%;  
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  
+  #about-me p {
+    border-radius: 5px;  
+    background-color: #fff;
+  }
+  

@@ -1,6 +1,6 @@
-import React, { useState} from "react";
+import React from "react";
 import Project from './Project';
-import projects from '../assets/projects.json'
+import projects from '../../assets/projects.json'
 
 export default function Portfolio(){
     const cards = projects.map((project, i) => {
