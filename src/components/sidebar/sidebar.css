@@ -1,0 +1,36 @@
+#sidebar {    
+    visibility: hidden;
+    display: none;
+
+    width: 5%;
+    position: relative;
+    padding: 5px;
+    float: left;
+    height: 100vh;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#sidebar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    position: absolute;
+    width: 50%;
+}
+
+#sidebar div a:hover {
+    transform: scale(1.5);
+}
+.svg {
+    /* filter: invert(99%) sepia(75%) saturate(1585%) hue-rotate(322deg) brightness(104%) contrast(101%); */
+}
+
+@media  screen and (min-width: 500px) {
+    #sidebar {
+        visibility: visible;
+        display: flex;
+    }
+}
