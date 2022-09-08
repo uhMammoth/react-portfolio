@@ -1,8 +1,9 @@
 import React from "react";
+import './projects.css'
 
 export default function Project(){
     return(
-        <div>
+        <div id="projects">
             <div >
                 <a href="#"><img src="" alt="temp"/></a>
                 <p>aaaaaaaaa</p>        
@@ -19,6 +20,7 @@ export default function Project(){
                 <a href="#"><img src="" alt="temp"/></a>
                 <p>aaaaaaaaa</p>        
             </div>
+            
         </div>
     );
 };
