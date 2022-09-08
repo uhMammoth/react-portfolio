@@ -6,15 +6,13 @@ import Project from './components/projects/Project';
 import Resume from './components/experience/Resume';
 import Intro from './components/intro/Intro';
 import AboutMe from './components/aboutme/AboutMe';
-import Sidebar from './components/sidebar/Sidebar';
 
 export default function App() {
 
   return(        
     <>          
-      <Sidebar/>
-      <div className='main'>
-        <Nav />      
+      <Nav />
+      <div className='content'>              
         <Intro/>
         <AboutMe/>
         <Project />

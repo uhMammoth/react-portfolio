@@ -1,13 +1,16 @@
-#navbar {
-  border: 1px solid black;
-  display: inline-block;
-  height: min-content;
-  width: auto;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
+
 #nav-items {
-  float: right;
-  border: 1px solid black;
-  margin: 0;
+  position: relative;
+  left: auto;
+  right: 20px;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   }

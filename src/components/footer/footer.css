@@ -1,0 +1,16 @@
+#footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#footer ul{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#footer ul li {
+    
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import ResumeFile from '../../assets/Resume.pdf';
+import './experience.css';
 
 
 export default function Resume(){
