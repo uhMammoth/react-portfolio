@@ -1,35 +1,41 @@
-.sticky {
-  position: fixed;
-  top: 0;
+#navbar {
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  /* position: fixed; */
+  top: 0;
+  
 }
 
 #nav-items {
-  position: relative;
-  left: auto;
-  right: 20px;
+  box-shadow: 0 0 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: fit-content;
+  padding: 0;
+  border-radius: 0 0 15px 15px;
   margin: 0 auto;
   list-style: none;
-  display: flex;
+  
   }
 
 #nav-items li {    
   padding: 10px;
 }
 
-#nav-items a {
-  text-decoration: none;
-  color: var(--navy);
-  text-shadow: 1px 1px 1px var(--mint);
-  padding: 5px;
+#nav-items li:hover {    
+  background-color: aqua;
 }
 
-#nav-items a:hover {
-  border-radius: 5px;
+#nav-items li:first-child:hover {    
+  border-radius: 0 0 0 15px;
+}
+
+#nav-items li:last-child:hover {
+  border-radius: 0 0 15px 0;
+}
+
+#nav-items a {
+  float: right;
+  text-decoration: none;
+  color: black;
   padding: 5px;
-  background-color: var(--freshlemon);
-  color: var(--navy);
-  text-shadow: 3px 3px 3px var(--teal);
 }

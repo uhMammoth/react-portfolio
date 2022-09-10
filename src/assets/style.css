@@ -24,20 +24,13 @@ html {
 
 body {
   text-align: center;
-  /* background-image: linear-gradient(to bottom right, var(--lightlime), var(--teal)); */
-  /* background-color: var(--background); */
   position: relative;
   margin: 0;
+  padding: 0;
   font-family: "Source Sans Pro",system,system-ui,Helvetica,Arial,sans-serif;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-}
-
-.content > * {
-  padding: 0 100px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
