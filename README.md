@@ -13,9 +13,3 @@ Fairly simple to start this on a local repository just:
 npm i 
 npm start
 ```
-
-## Completed
-
-- react conditional rendering
-- projects grids and styling
-- contact form (no backend yet)
