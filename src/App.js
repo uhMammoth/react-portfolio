@@ -10,7 +10,7 @@ export default function App() {
 
   return(        
     <>          
-      <Nav />
+      {/* <Nav /> */}
       <Content /> 
       <a id='topOfPage' href='#'><img src={arrow} alt='go to top of page'/></a>   
     </>

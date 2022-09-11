@@ -1,18 +1,22 @@
 [
     {
-        "languages": [
+        "title": "languages",
+        "list": [
             "JavaScript (ES6)", "CSS", "HTML 5", "MySQL", "MongoDB"
         ]
     },{
-        "frameworks": [
+        "title": "frameworks",
+        "list": [
             "React", "jQuery", "Express", "Node"
         ]
     },{
-        "tools": [
+        "title": "tools",
+        "list": [
             "Bash", "Git & Github", "Chrome & Firefox DevTools" 
         ]
     }, {
-        "soft skills": [
+        "title": "soft skills",
+        "list": [
             ""
         ]
     }
