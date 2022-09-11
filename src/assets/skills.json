@@ -1,0 +1,19 @@
+[
+    {
+        "languages": [
+            "JavaScript (ES6)", "CSS", "HTML 5", "MySQL", "MongoDB"
+        ]
+    },{
+        "frameworks": [
+            "React", "jQuery", "Express", "Node"
+        ]
+    },{
+        "tools": [
+            "Bash", "Git & Github", "Chrome & Firefox DevTools" 
+        ]
+    }, {
+        "soft skills": [
+            ""
+        ]
+    }
+]

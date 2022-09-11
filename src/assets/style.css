@@ -17,20 +17,48 @@
   --text-accent: #abd699;
 }
 
+* {
+  box-sizing: inherit;
+}
+
 html {
   scroll-behavior: smooth;
   scrollbar-color: var(--background) white;
 }
 
 body {
-  text-align: center;
-  position: relative;
+  display: flex;
+  color: #36454f;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro",system,system-ui,Helvetica,Arial,sans-serif;
+  font-family: "Source Sans Pro",Helvetica,sans-serif;
+  position: relative;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
+#topOfPage{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%;
+  z-index: 1;
+  text-decoration: none;*/
+  text-align: end;
+  opacity: 0.5;
+  transition: transform 0.5s ease, opacity 1s ease;
+}
+
+#topOfPage img{
+  width: 50px;
+  height: 50px;
+}
+
+#topOfPage:hover {
+  background-color: none;
+  opacity: 1;
+  transform: translateY(-5px);
+  transition: opacity 1s ease, transform 0.5s ease;
 }
