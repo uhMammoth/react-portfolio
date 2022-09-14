@@ -1,23 +1,24 @@
 #navbar {
   display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  float: left;
-  justify-content: space-between;
-  background-color: rgba(0, 98, 116, 0.5);
+  /* flex-direction: column; */
+  /* position: sticky; */
+  justify-content: space-around;
+  background-color: rgba(117, 201, 183, 0.5);
   min-width: 120px;
 }
 #navbar section {
   display: flex;
   align-items: center;
 }
-#navbar section div {
-  width: 100%;
+.created {
+  padding-left: 10px;
+  float: left;
 }
 .navItems{
   flex-basis: 50%;
+}
+.socialMedia {
+  display: flex;
 }
 #navbar p{
   padding: 20px 0;

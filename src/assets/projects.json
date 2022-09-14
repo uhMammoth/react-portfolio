@@ -1,6 +1,6 @@
 [
     {
-        "title": "School Website",
+        "title": "School Counseling Appointments",
         "desc": "Website concept for a school counseling system",
         "deployment": "https://park-place-association.herokuapp.com/",
         "github": "https://github.com/uhMammoth/school-website",
@@ -8,7 +8,7 @@
         "used": ["JavaScript","React", "GraphQL", "JSONwebtoken", "Express", "MongoDB", "Tailwind"]
     },
     {
-        "title": "Park Place",
+        "title": "Park Place Resident Website",
         "desc": "An resident website for a homeowner's association in Ontario, CA",
         "deployment": "https://park-place-association.herokuapp.com/",
         "github": "https://github.com/uhMammoth/GamePlatforms",
@@ -16,7 +16,7 @@
         "used": ["JavaScript","Express", "MySQL","Handlebars", "Tailwind"]
     },
     {
-        "title": "Game Platforms",
+        "title": "Game Platforms Wikipedia",
         "desc": "Implementing an API to make a mock game wikipedia site",
         "deployment": "https://uhmammoth.github.io/GamePlatforms/",
         "github": "https://github.com/uhMammoth/GamePlatforms",

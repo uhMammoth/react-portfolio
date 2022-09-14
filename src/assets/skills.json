@@ -12,7 +12,7 @@
     },{
         "title": "tools",
         "list": [
-            "Bash", "Git & Github", "Chrome & Firefox DevTools" 
+            "Bash", "Git & Github", "Chrome DevTools" , "Firefox DevTools" 
         ]
     }, {
         "title": "soft skills",

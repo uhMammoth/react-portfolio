@@ -8,26 +8,28 @@ import project1 from '../../assets/images/game-platforms.png';
 
 export default function Content(){
     const {height, width} = useWindowDimensions();
+    const offset = 100;
     return (
         <main>
             <header>
                 {/* intro */}
                 <div id='intro'>
-                    <h1>Hi my name is Kyle Petty!</h1>
-                    <h1>I'm a Full Stack Web Developer</h1>
-                    <h2>Functionality and intuitiveness are the driving forces for every application I build! Currently learning additional languages to build on my bootcamp experience at UCR.</h2>
+                    
+                    <h1>Hi my name is Kyle Petty!<br/>I'm a Full Stack Web Developer</h1>
+                    <div className='profile'></div>
                 </div> 
             </header>
             <section>
                 {/* about me */}
-                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' delay={200} duration={1}>
+                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' offset={offset} delay={200} duration={1}>
                 <div id='aboutMe'>
                     <div className='sectionTitle'>about me</div>
                     <div className='sectionContent'>
-                        <div>
-                        <p>I'm currently an Engineer at Upstatement building things for the web with some awesome people. I recently graduated from Northeastern University after completing three awesome six-month co-ops at MullenLowe U.S., Starry, and Apple Music.</p><br/>
-                        <p>As a software engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences. </p><br/>
-                        <p>When I'm not in front of a computer screen, I'm probably snowboarding, cruising around on my penny board, or crossing off another item on my bucket list. </p>
+                        <div className='aboutMe'>
+                            <p>I recently finished a 24-week bootcamp at UCR which helped me improve my preexisting knowledge of HTML and CSS and has now made me into a full stack capable web developer.</p><br/>
+                            <p>What motivates me when i design a website is the chance to take the image in my head and make it real. My goal is to create intuitive applications making user navigation a smooth transition to where they need to go. I'm very interested in also learning automation, which is why my next goal is currently learning Python.
+                            </p><br/>
+                            <p>When I'm not in front of a computer screen, I'm probably snowboarding, cruising around on my penny board, or crossing off another item on my bucket list. </p>
                         </div>
                     </div>
                 </div>
@@ -35,25 +37,27 @@ export default function Content(){
             </section>
             <section>
                 {/* skills */}
-                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' delay={200} duration={1}>
+                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' offset={offset} delay={200} duration={1}>
                     <div id='skills'>
                         <div className='sectionTitle'>skills</div>
                         <div className='sectionContent'>
-                            {skills.map((skill) => {
-                                return (<ul>
-                                    <li>{skill.title}</li>
-                                    {skill.list.map((s) => {
-                                        return(<li>{s}</li>)
-                                    })}
-                                </ul>)
-                            })}
+                            <div className='list'>
+                                {skills.map((skill) => (
+                                    <ul className='skillsList'>
+                                        <li className='skillTitle'>{skill.title}</li>
+                                        {skill.list.map((s) => (
+                                            <li className='skill'>{s}</li>
+                                        ))}
+                                    </ul>
+                                ))}
+                            </div>
                         </div>                
                     </div>
                 </AnimationOnScroll>
             </section>
             <section>
                 {/* projects */}
-                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' delay={200} duration={1}>
+                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' offset={offset} delay={200} duration={1}>
                     <div id='projects'>
                         <div className='sectionTitle'>projects</div>                        
                         <div className='sectionContent'>
@@ -62,13 +66,11 @@ export default function Content(){
                                     <img className='projectImg' src={require(`../../assets/images/${p.img}`)} alt=''/>
                                     <h3 className='projectTitle'>{p.title}</h3>
                                     <p className='projectDesc'>{p.desc}</p>
-                                    <div>
-                                        {p.used.map((u, i) => {
-                                            return (
-                                                <span className='projectUsed'>{u}</span>
-                                            )
-                                        })}
-                                    </div>
+                                    <ul className='projectUsed'>
+                                        {p.used.map((u, i) => (
+                                            <li className='used' key={i}>{u}</li>
+                                        ))}
+                                    </ul>
                                     <div className='projectIcons'>
                                         <a href={p.github}>
                                             <img className='icon' src={require('../../assets/icons/github.png')}/>
@@ -85,21 +87,33 @@ export default function Content(){
             </section>
             <section>
                 {/* education */}
-                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' delay={200} duration={1}>
+                <AnimationOnScroll animateIn='animate__fadeIn' animateOnce='true' offset={offset} delay={200} duration={1}>
                     <div id='education'>
-                        <div className='sectionTitle'>education</div>
+                        <div className='sectionTitle'>achievements</div>
                         <div className='sectionContent'>
-                        EDUCATION
-
-                        Certificate in Full Stack Web Development
-                        University California Riverside Bootcamp Ext
-                        Riverside, CA
-                        FEBRUARY 2022 - JULY 2022
-
-                        Associates in Computer Science
-                        Chaffey Community College
-                        Rancho Cucamonga CA
-                        AUGUST 2017 - MAY 2022
+                            <div className='achievements'>
+                                <div className='achievement'>
+                                    <span className='degree'>Certificate in Full Stack Web Development</span>
+                                    <span className='school'>University California Riverside Bootcamp Ext</span>
+                                    <span className='location'>Riverside, CA</span>
+                                    
+                                    <span className='earned'>July 2022</span>
+                                </div>
+                                <div className='achievement'>
+                                    <span className='degree'>Associates in Computer Science</span>
+                                    <span className='school'>Chaffey Community College</span>
+                                    <span className='location'>Rancho Cucamonga, CA</span>
+                                    
+                                    <span className='earned'>May 2022</span>                            
+                                </div>
+                                <div className='achievement'>
+                                    <span className='degree'>Eagle Scout</span>
+                                    <span className='school'>Boy Scouts of America, Troop 601</span>
+                                    <span className='location'>Upland, CA</span>
+                                    
+                                    <span className='earned'>June 2014</span>                            
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </AnimationOnScroll>
