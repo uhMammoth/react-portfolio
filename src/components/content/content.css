@@ -13,21 +13,14 @@ main header{
 }
 
 #intro {
-    height: 100%;
     max-width: 1200px;
-
+    
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
-
-/* .profile {
-    border: 1px solid black;
-    width: 50vw;
-    height: 200px;
-} */
 
 #aboutMe, #skills, #projects, #education{
     display: flex;

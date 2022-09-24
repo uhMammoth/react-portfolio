@@ -4,7 +4,6 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import skills from '../../assets/skills.json';
 import projects from '../../assets/projects.json';
 import useWindowDimensions from '../../util/helper';
-import project1 from '../../assets/images/game-platforms.png';
 
 export default function Content(){
     const {height, width} = useWindowDimensions();
@@ -13,10 +12,8 @@ export default function Content(){
         <main>
             <header>
                 {/* intro */}
-                <div id='intro'>
-                    
+                <div id='intro'>                    
                     <h1>Hi my name is Kyle Petty!<br/>I'm a Full Stack Web Developer</h1>
-                    <div className='profile'></div>
                 </div> 
             </header>
             <section>
@@ -29,7 +26,7 @@ export default function Content(){
                             <p>I recently finished a 24-week bootcamp at UCR which helped me improve my preexisting knowledge of HTML and CSS and has now made me into a full stack capable web developer.</p><br/>
                             <p>What motivates me when i design a website is the chance to take the image in my head and make it real. My goal is to create intuitive applications making user navigation a smooth transition to where they need to go. I'm very interested in also learning automation, which is why my next goal is currently learning Python.
                             </p><br/>
-                            <p>When I'm not in front of a computer screen, I'm probably snowboarding, cruising around on my penny board, or crossing off another item on my bucket list. </p>
+                            <p>When I'm not in front of a computer screen, I like to go camping, riding my motorcycle to discover new locations in SoCal, or getting motivated by a couple youtube videos to start another hobby.</p>
                         </div>
                     </div>
                 </div>
