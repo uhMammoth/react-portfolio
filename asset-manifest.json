@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d9a0fe1d.css",
-    "main.js": "/react-portfolio/static/js/main.aa7277cc.js",
+    "main.css": "/react-portfolio/static/css/main.451d628c.css",
+    "main.js": "/react-portfolio/static/js/main.b39ccb2a.js",
     "static/js/787.1ed0c42c.chunk.js": "/react-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/run-buddy.png": "/react-portfolio/static/media/run-buddy.c83331ac4d27ad3ae3c5.png",
     "static/media/school-website.png": "/react-portfolio/static/media/school-website.a0eddedaf95dd6067630.png",
@@ -9,15 +9,16 @@
     "static/media/game-platforms.png": "/react-portfolio/static/media/game-platforms.91f08ab64ed6292d9483.png",
     "static/media/pfp.jpg": "/react-portfolio/static/media/pfp.4858be2b7eeda1e5641f.jpg",
     "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.63dcc267ca3f999608de.pdf",
+    "static/media/arrow.png": "/react-portfolio/static/media/arrow.e1f248039b9675538f04.png",
+    "static/media/github.png": "/react-portfolio/static/media/github.3ff523db9257950b999c.png",
     "static/media/logo.svg": "/react-portfolio/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "index.html": "/react-portfolio/index.html",
-    "static/media/github.svg": "/react-portfolio/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
-    "main.d9a0fe1d.css.map": "/react-portfolio/static/css/main.d9a0fe1d.css.map",
-    "main.aa7277cc.js.map": "/react-portfolio/static/js/main.aa7277cc.js.map",
+    "main.451d628c.css.map": "/react-portfolio/static/css/main.451d628c.css.map",
+    "main.b39ccb2a.js.map": "/react-portfolio/static/js/main.b39ccb2a.js.map",
     "787.1ed0c42c.chunk.js.map": "/react-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9a0fe1d.css",
-    "static/js/main.aa7277cc.js"
+    "static/css/main.451d628c.css",
+    "static/js/main.b39ccb2a.js"
   ]
 }
