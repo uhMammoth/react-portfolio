@@ -61,6 +61,8 @@ main header{
 .skillTitle {
     text-transform: capitalize;
     font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
 }
 
 .icon {
@@ -81,7 +83,6 @@ main header{
 }
 
 .project {
-    /* clear: right; */
     height: min-content;
     overflow: auto;
     margin-bottom: 20px;
@@ -124,7 +125,7 @@ main header{
 .achievement {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    margin-inline-end: 10px;
 }
 
 .degree {
@@ -151,8 +152,13 @@ main header{
 }
 
 @media only screen and (max-width: 900px) {
+    #intro {
+        width: 70vw;
+        text-align: center;
+    }
     #aboutMe, #skills, #projects, #education{
         flex-direction: column;
+        width: 90vw;
     }
     .sectionTitle {
         text-align: center;
@@ -168,7 +174,6 @@ main header{
         min-width: fit-content;
     }
     .project {
-        width: 70%;
         margin: 0 auto 20px;
     }
     .projectImg {
@@ -177,15 +182,19 @@ main header{
     .achievements {
         flex-direction: column;
         align-items: flex-start;
-        width: 50%;
         margin: 0 auto;
     }
     .achievement {
         width: max-content;
         margin-bottom: 20px;
     }
-    .list, .aboutMe {
-        width: 70%;
-        margin: 0 auto;
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+    .skillsList {
+        text-align: center;
+        margin: 5px;
+        box-shadow: 2px 2px 5px var(--text-main);
+    }    
 } 

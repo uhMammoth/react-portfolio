@@ -3,10 +3,8 @@ import './content.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import skills from '../../assets/skills.json';
 import projects from '../../assets/projects.json';
-import useWindowDimensions from '../../util/helper';
 
 export default function Content(){
-    const {height, width} = useWindowDimensions();
     const offset = 100;
     return (
         <main>
@@ -24,7 +22,7 @@ export default function Content(){
                     <div className='sectionContent'>
                         <div className='aboutMe'>
                             <p>I recently finished a 24-week bootcamp at UCR which helped me improve my preexisting knowledge of HTML and CSS and has now made me into a full stack capable web developer.</p><br/>
-                            <p>What motivates me when i design a website is the chance to take the image in my head and make it real. My goal is to create intuitive applications making user navigation a smooth transition to where they need to go. I'm very interested in also learning automation, which is why my next goal is currently learning Python.
+                            <p>What motivates me when I design a website is the chance to take the image in my head and make it real. My goal is to create intuitive applications making user navigation a smooth transition to where they need to go. I'm very interested in also learning automation, which is why my next goal is currently learning Python.
                             </p><br/>
                             <p>When I'm not in front of a computer screen, I like to go camping, riding my motorcycle to discover new locations in SoCal, or getting motivated by a couple youtube videos to start another hobby.</p>
                         </div>

@@ -1,7 +1,5 @@
 #navbar {
   display: flex;
-  /* flex-direction: column; */
-  /* position: sticky; */
   justify-content: space-around;
   background-color: rgba(117, 201, 183, 0.5);
   min-width: 120px;
@@ -10,29 +8,51 @@
   display: flex;
   align-items: center;
 }
+
+
+
+
+
 .created {
   padding-left: 10px;
   float: left;
-}
-.navItems{
-  flex-basis: 50%;
 }
 .socialMedia {
   display: flex;
 }
 #navbar p{
   padding: 20px 0;
-  margin: 0 auto;
   text-align: center;
 }
-#navbar a{
+
+.socialMedia a{
   padding: 10px;
   text-transform: uppercase;
   display: block;
   text-decoration: none;
   color: black;
 }
-#navbar .navItems a:hover {    
+
+.socialMedia a:hover {
   background-color: white;
-  box-shadow: -6px 0 5px black;
+  border-radius: 15px;
+  text-shadow: -1px -1px 1px black;
+  color: var(--text-main);
 }
+
+@media only screen and (max-width: 900px) {
+  #navbar {
+    flex-wrap: wrap;
+  }
+  .created {
+    padding: 0;
+    order: 1;
+  }
+  .socialMedia {
+    margin-top: 5px;
+    order: 0;
+  }
+}
+
+
+
