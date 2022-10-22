@@ -12,7 +12,7 @@ export default function Nav(){
             <section >
                 <div className='socialMedia'>
                     <a href="https://github.com/uhMammoth">Github</a>
-                    <a href="www.linkedin.com/in/kyle-petty">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/kyle-petty">LinkedIn</a>
                     <a href={require('../../assets/Resume.pdf')} rel="noopener noreferrer" target="_blank">Resume</a>  
                     <a href="mailto:m.kylepetty@gmail.com">email</a>
                 </div>
